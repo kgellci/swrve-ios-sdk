@@ -8,7 +8,8 @@
 #pragma clang diagnostic ignored "-Wgnu"
 
 #ifdef DEBUG
-#define DebugLog( s, ... ) NSLog(s, ##__VA_ARGS__)
+// uncomment the following to get logging in debug, quick fix for now.
+#define DebugLog( s, ... ) // NSLog(s, ##__VA_ARGS__)
 #else
 #define DebugLog( s, ... )
 #endif
